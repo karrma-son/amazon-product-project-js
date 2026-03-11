@@ -659,8 +659,3 @@ const products = [
     ]
   }
 ];
-
-
-const jsonString = JSON.stringify(products);
-
-console.log(jsonString)
