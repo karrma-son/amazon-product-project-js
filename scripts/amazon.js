@@ -6,7 +6,7 @@ products.forEach((product)=>{
   `<div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
-              src="${product.image}">
+            src="${product.image}">
           </div>
 
           <div class="product-name limit-text-to-2-lines">
@@ -23,7 +23,7 @@ products.forEach((product)=>{
           </div>
 
           <div class="product-price">
-            ${product.priceCents * 100}
+            ${(Math.round(product.priceCents) / 100).toFixed(2)}
           </div>
 
           <div class="product-quantity-container">
@@ -78,7 +78,6 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     })
   }
 
- 
   console.log(cart)
   });
 });
